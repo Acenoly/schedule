@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+
+@interface ViewController : UIViewController<UIScrollViewDelegate>
+
+@property (nonatomic,strong) UIScrollView *scrollView;
+@property (nonatomic,strong) UIScrollView *titleWeekView;
+@property (nonatomic,strong) UIScrollView *LeftTimeView;
+@property float KYScrollView;
+@property float KXScrollView;
+@property float KX_AVG_View;
 
 @end
 

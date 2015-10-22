@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3124EBAE1BD8A822003589AC /* BCClassButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3124EBAD1BD8A822003589AC /* BCClassButton.m */; settings = {ASSET_TAGS = (); }; };
+		313753EE1BD38B9200922FDD /* AddClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313753ED1BD38B9200922FDD /* AddClassViewController.m */; settings = {ASSET_TAGS = (); }; };
+		313753F01BD38C6D00922FDD /* yuanti.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 313753EF1BD38C6D00922FDD /* yuanti.TTF */; settings = {ASSET_TAGS = (); }; };
+		315F23041BD49210000854A4 /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F23031BD49210000854A4 /* SwiftOverlays.swift */; settings = {ASSET_TAGS = (); }; };
 		31F24A1E1BD1EB9C00CE1A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F24A1D1BD1EB9C00CE1A0A /* main.m */; };
 		31F24A211BD1EB9C00CE1A0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F24A201BD1EB9C00CE1A0A /* AppDelegate.m */; };
 		31F24A241BD1EB9C00CE1A0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F24A231BD1EB9C00CE1A0A /* ViewController.m */; };
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3124EBAC1BD8A822003589AC /* BCClassButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCClassButton.h; sourceTree = "<group>"; };
+		3124EBAD1BD8A822003589AC /* BCClassButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCClassButton.m; sourceTree = "<group>"; };
+		313753EC1BD38B9200922FDD /* AddClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClassViewController.h; sourceTree = "<group>"; };
+		313753ED1BD38B9200922FDD /* AddClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClassViewController.m; sourceTree = "<group>"; };
+		313753EF1BD38C6D00922FDD /* yuanti.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = yuanti.TTF; sourceTree = "<group>"; };
+		315F23031BD49210000854A4 /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftOverlays.swift; path = schedule/SwiftOverlays.swift; sourceTree = "<group>"; };
 		31F24A191BD1EB9C00CE1A0A /* schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F24A1D1BD1EB9C00CE1A0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31F24A1F1BD1EB9C00CE1A0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,9 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31EF84A71BD3627800E9154C /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		31F24A101BD1EB9C00CE1A0A = {
 			isa = PBXGroup;
 			children = (
+				31EF84A71BD3627800E9154C /* image */,
+				31F24A4F1BD2320100CE1A0A /* model */,
 				31F24A1B1BD1EB9C00CE1A0A /* schedule */,
 				31F24A351BD1EB9D00CE1A0A /* scheduleTests */,
 				31F24A401BD1EB9D00CE1A0A /* scheduleUITests */,
@@ -101,6 +120,8 @@
 		31F24A1B1BD1EB9C00CE1A0A /* schedule */ = {
 			isa = PBXGroup;
 			children = (
+				313753EC1BD38B9200922FDD /* AddClassViewController.h */,
+				313753ED1BD38B9200922FDD /* AddClassViewController.m */,
 				31F24A1F1BD1EB9C00CE1A0A /* AppDelegate.h */,
 				31F24A201BD1EB9C00CE1A0A /* AppDelegate.m */,
 				31F24A221BD1EB9C00CE1A0A /* ViewController.h */,
@@ -138,6 +159,17 @@
 				31F24A431BD1EB9D00CE1A0A /* Info.plist */,
 			);
 			path = scheduleUITests;
+			sourceTree = "<group>";
+		};
+		31F24A4F1BD2320100CE1A0A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3124EBAC1BD8A822003589AC /* BCClassButton.h */,
+				3124EBAD1BD8A822003589AC /* BCClassButton.m */,
+				315F23031BD49210000854A4 /* SwiftOverlays.swift */,
+				313753EF1BD38C6D00922FDD /* yuanti.TTF */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +234,13 @@
 		31F24A111BD1EB9C00CE1A0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = zbc;
 				TargetAttributes = {
 					31F24A181BD1EB9C00CE1A0A = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = B357BR4TJ7;
 					};
 					31F24A311BD1EB9D00CE1A0A = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -244,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31F24A2C1BD1EB9D00CE1A0A /* LaunchScreen.storyboard in Resources */,
+				313753F01BD38C6D00922FDD /* yuanti.TTF in Resources */,
 				31F24A291BD1EB9D00CE1A0A /* Assets.xcassets in Resources */,
 				31F24A271BD1EB9D00CE1A0A /* Main.storyboard in Resources */,
 			);
@@ -270,8 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315F23041BD49210000854A4 /* SwiftOverlays.swift in Sources */,
 				31F24A241BD1EB9C00CE1A0A /* ViewController.m in Sources */,
+				313753EE1BD38B9200922FDD /* AddClassViewController.m in Sources */,
 				31F24A211BD1EB9C00CE1A0A /* AppDelegate.m in Sources */,
+				3124EBAE1BD8A822003589AC /* BCClassButton.m in Sources */,
 				31F24A1E1BD1EB9C00CE1A0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,10 +451,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = schedule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhangbingchuan.schedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,10 +467,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = schedule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhangbingchuan.schedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -498,6 +545,7 @@
 				31F24A481BD1EB9D00CE1A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31F24A491BD1EB9D00CE1A0A /* Build configuration list for PBXNativeTarget "scheduleTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +554,7 @@
 				31F24A4B1BD1EB9D00CE1A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31F24A4C1BD1EB9D00CE1A0A /* Build configuration list for PBXNativeTarget "scheduleUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +563,7 @@
 				31F24A4E1BD1EB9D00CE1A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
